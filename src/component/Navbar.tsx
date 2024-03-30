@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import Link from 'next/link';
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5aaee8e16e4b07b1d32a948189270ed45eeea31a
 import { BiMenu } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
 
@@ -8,7 +12,9 @@ export default function Navbar() {
   return (
     <>
       <div className="navbar">
-        <div className="navbar__logo">nextmap</div>
+        <Link className="navbar__logo" href="/">
+          nextmap
+        </Link>
         <div className="navbar__list">
           <Link href="/stores" className="navbar__list--item">
             맛집 목록

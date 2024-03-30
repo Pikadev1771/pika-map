@@ -5,7 +5,7 @@ export default function StoreEditPage() {
   const { id } = router.query;
   return (
     <div>
-      <h1>Store Detail : {id}</h1>
+      <h1>Store Edit: {id}</h1>
     </div>
   );
 }
