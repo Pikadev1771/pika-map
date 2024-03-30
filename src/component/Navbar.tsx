@@ -1,9 +1,5 @@
 import { useState } from 'react';
 import Link from 'next/link';
-<<<<<<< HEAD
-=======
-
->>>>>>> 5aaee8e16e4b07b1d32a948189270ed45eeea31a
 import { BiMenu } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
 
