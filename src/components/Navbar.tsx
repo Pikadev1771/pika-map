@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Link from 'next/link';
-
 import { BiMenu } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
 
