@@ -9,7 +9,6 @@ export default function Home({ stores }: { stores: StoreType[] }) {
   const [map, setMap] = useState(null);
   const [currentStore, setCurrentStore] = useState(null);
 
-  console.log('currentStore', currentStore);
   return (
     <>
       <Map setMap={setMap} />
