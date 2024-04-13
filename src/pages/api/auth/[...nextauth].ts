@@ -1,4 +1,5 @@
 import NextAuth from 'next-auth';
+
 import { PrismaAdapter } from '@auth/prisma-adapter';
 import { PrismaClient } from '@prisma/client';
 
@@ -25,9 +26,9 @@ export const authOptions: any = {
     //   clientSecret: process.env.KAKAO_CLIENT_SECRET || '',
     // }),
   ],
-  //   pages: {
-  //     signIn: '/users/login',
-  //   },
+  // pages: {
+  //   signIn: '/users/login',
+  // },
 };
 
 export default NextAuth(authOptions);
