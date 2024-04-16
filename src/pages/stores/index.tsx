@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useCallback, useState } from 'react';
+import React, { useRef, useEffect, useCallback, Fragment } from 'react';
 
 import Image from 'next/image';
 import { StoreType } from '@/interface';
@@ -89,7 +89,7 @@ export default function StoreListPage() {
           <Loading />
         ) : (
           stores?.pages?.map((page, index) => (
-            <React.Fragment key={index}>
+            <Fragment key={index}>
               {page.data.map((store: StoreType, i: number) => (
                 <li
                   className="flex justify-between gap-x-6 py-5 cursor-pointer hover:bg-gray-50 "
@@ -127,7 +127,7 @@ export default function StoreListPage() {
                   </div>
                 </li>
               ))}
-            </React.Fragment>
+            </Fragment>
           ))
         )}
       </ul>
