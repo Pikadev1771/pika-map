@@ -30,7 +30,7 @@ export default function Navbar() {
               로그아웃
             </button>
           ) : (
-            <Link href="api/auth/signin" className="navbar__list--item">
+            <Link href="/api/auth/signin" className="navbar__list--item">
               로그인
             </Link>
           )}
@@ -67,7 +67,7 @@ export default function Navbar() {
               </button>
             ) : (
               <Link
-                href="api/auth/signin"
+                href="/api/auth/signin"
                 className="navbar__list--item--mobile"
               >
                 로그인
