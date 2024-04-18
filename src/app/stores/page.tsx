@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useRef, useEffect, useCallback, Fragment } from 'react';
 
 import Image from 'next/image';
@@ -12,7 +14,7 @@ import useIntersectionObserver from '@/hooks/useIntersectionObserver';
 import Loader from '@/components/Loader';
 import SearchFilter from '@/components/SearchFilter';
 
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { searchState } from '@/atom';
 import useReciolValue, { useRecoilValue } from 'recoil';
 

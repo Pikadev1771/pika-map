@@ -21,7 +21,7 @@ export default function Page() {
         <button
           type="button"
           onClick={() => {
-            router.replace({ pathname: '/[slug]', query: { slug: 'pushhh' } });
+            router.replace({ pathname: '/[slug]', query: { slug: 'replace' } });
           }}
         >
           REPLACE

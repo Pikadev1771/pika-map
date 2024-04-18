@@ -1,6 +1,6 @@
-import { useState } from 'react';
+'use client';
 
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { useQuery } from 'react-query';
 import axios from 'axios';
 import { StoreType } from '@/interface';
@@ -8,9 +8,9 @@ import Loader from '@/components/Loader';
 import Map from '@/components/Map';
 import Marker from '@/components/Marker';
 
-export default function StorePage() {
+export default function StorePage({ params }: { params: { id: string } }) {
   const router = useRouter();
-  const { id } = router.query;
+  const id = params.id;
 
   const fetchStore = async () => {
     const { data } = await axios(`/api/stores?id=${id}`);

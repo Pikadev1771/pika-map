@@ -1,3 +1,5 @@
+'use client';
+
 /*global kakao*/
 import { Dispatch } from 'react';
 import Script from 'next/script';
