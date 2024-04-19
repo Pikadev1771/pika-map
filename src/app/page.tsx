@@ -23,6 +23,7 @@ async function getData() {
     });
 
     if (!res.ok) {
+      console.log('error');
       throw new Error('Failed to fetch data');
     }
 
