@@ -32,7 +32,7 @@ export default function StoreNewPage() {
           }
         } catch (e) {
           console.log(e);
-          toast.error('데이터 생성중 문제가 생겼습니다. 다시 시도해주세요!');
+          toast.error('데이터 생성중 문제가 생겼습니다. 다시 시도해주세요!!');
         }
       })}
     >
