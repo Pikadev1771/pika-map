@@ -6,7 +6,7 @@ import { StoreType } from '@/interface';
 
 export default async function Home() {
   const stores: StoreType[] = await getData();
-  console.log('stores', stores);
+
   return (
     <>
       <Map />
@@ -23,7 +23,6 @@ async function getData() {
     });
 
     if (!res.ok) {
-      console.log('error');
       throw new Error('Failed to fetch data');
     }
 
